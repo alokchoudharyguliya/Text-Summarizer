@@ -5,3 +5,49 @@
 [2025-08-28 23:18:49,926:INFO:common:Created Directory at: artifacts/data_ingestion]
 [2025-08-28 23:19:08,522:INFO:data_ingestion:File is downloaded]
 [2025-08-28 23:19:08,636:INFO:main:Stage Data Ingestion Stage Completed]
+[2025-08-28 23:57:01,499:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-28 23:57:01,501:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-28 23:57:01,502:INFO:common:Created Directory at: artifacts]
+[2025-08-28 23:57:01,503:INFO:common:Created Directory at: artifacts/data_transformation]
+[2025-08-28 23:58:08,799:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-28 23:58:08,800:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-28 23:58:08,801:INFO:common:Created Directory at: artifacts]
+[2025-08-28 23:58:08,802:INFO:common:Created Directory at: artifacts/data_transformation]
+[2025-08-28 23:58:59,408:INFO:main:Stage Data Ingestion Stage initiated]
+[2025-08-28 23:58:59,409:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-28 23:58:59,410:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-28 23:58:59,410:INFO:common:Created Directory at: artifacts]
+[2025-08-28 23:58:59,411:INFO:common:Created Directory at: artifacts/data_ingestion]
+[2025-08-28 23:59:14,333:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-28 23:59:14,335:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-28 23:59:14,335:INFO:common:Created Directory at: artifacts]
+[2025-08-28 23:59:14,336:INFO:common:Created Directory at: artifacts/data_transformation]
+[2025-08-28 23:59:18,021:INFO:data_ingestion:File is downloaded]
+[2025-08-28 23:59:18,133:INFO:main:Stage Data Ingestion Stage Completed]
+[2025-08-28 23:59:24,167:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-28 23:59:24,169:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-28 23:59:24,170:INFO:common:Created Directory at: artifacts]
+[2025-08-28 23:59:24,170:INFO:common:Created Directory at: artifacts/data_transformation]
+[2025-08-29 00:05:38,113:INFO:main:Stage Data Ingestion Stage initiated]
+[2025-08-29 00:05:38,114:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-29 00:05:38,114:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-29 00:05:38,115:INFO:common:Created Directory at: artifacts]
+[2025-08-29 00:05:38,115:INFO:common:Created Directory at: artifacts/data_ingestion]
+[2025-08-29 00:05:38,115:INFO:data_ingestion:File alread exists]
+[2025-08-29 00:05:38,224:INFO:main:Stage Data Ingestion Stage Completed]
+[2025-08-29 00:05:38,224:INFO:main:Stage Data Transformation Stage initiated]
+[2025-08-29 00:05:38,225:INFO:common:Yaml file:config\config.yaml loaded successfully]
+[2025-08-29 00:05:38,226:INFO:common:Yaml file:params.yaml loaded successfully]
+[2025-08-29 00:05:38,226:INFO:common:Created Directory at: artifacts]
+[2025-08-29 00:05:38,227:INFO:common:Created Directory at: artifacts/data_transformation]
+[2025-08-29 00:05:48,808:ERROR:main:Directory artifacts/data_ingestion/samsum_dataset not found]
+Traceback (most recent call last):
+  File "C:\Users\alok4\Desktop\Text-Summarizer\main.py", line 25, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "C:\Users\alok4\Desktop\Text-Summarizer\src\textSummarizer\pipeline\stage_2_data_transformation.py", line 11, in initiate_data_transformation
+    data_transformation.convert()
+  File "C:\Users\alok4\Desktop\Text-Summarizer\src\textSummarizer\components\data_transformation.py", line 22, in convert
+    data_samsum=load_from_disk(self.config.data_path)
+  File "C:\Users\alok4\Desktop\Text-Summarizer\.venv\lib\site-packages\datasets\load.py", line 1466, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory artifacts/data_ingestion/samsum_dataset not found
