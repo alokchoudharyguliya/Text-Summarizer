@@ -9,6 +9,7 @@ dependencies = [
     "boto3>=1.40.19",
     "datasets>=4.0.0",
     "ensure>=1.0.4",
+    "evaluate>=0.4.5",
     "fastapi>=0.116.1",
     "hf-xet>=1.1.9",
     "huggingface-hub[hf-xet]>=0.34.4",
