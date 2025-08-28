@@ -21,6 +21,6 @@ dependencies = [
     "sacrebleu>=2.5.1",
     "torch>=2.8.0",
     "tqdm>=4.67.1",
-    "transformers[sentencepiece]>=4.55.4",
+    "transformers[sentencepiece,standard]>=4.55.4",
     "uvicorn>=0.35.0",
 ]
