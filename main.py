@@ -7,6 +7,7 @@
 from src.textSummarizer.logging import logging
 from src.textSummarizer.pipeline.stage_1_data_ingestion import DataIngestionTrainingPipeline
 from src.textSummarizer.pipeline.stage_2_data_transformation import DataTransformationPipeline
+from src.textSummarizer.pipeline.stage_3_model_training import ModelTrainingPipeline
 
 STAGE_NAME="Data Ingestion Stage"
 try:
@@ -23,6 +24,15 @@ try:
     logging.info(f"Stage {STAGE_NAME} initiated")
     data_transformation_pipeline=DataTransformationPipeline()
     data_transformation_pipeline.initiate_data_transformation()
+    logging.info(f"Stage {STAGE_NAME} Completed")
+except Exception as e:
+    logging.exception(e)
+
+STAGE_NAME="Model Training Stage"
+try:
+    logging.info(f"Stage {STAGE_NAME} initiated")
+    model_training_pipeline=ModelTrainingPipeline()
+    model_training_pipeline.initiate_model_training()
     logging.info(f"Stage {STAGE_NAME} Completed")
 except Exception as e:
     logging.exception(e)
